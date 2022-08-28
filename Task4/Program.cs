@@ -12,15 +12,15 @@ int b =int.Parse(Console.ReadLine());
 Console.WriteLine("введите число");
 int c =int.Parse(Console.ReadLine());
 
-int Min(int arg1, int arg2, int arg3) 
+int Max(int arg1, int arg2, int arg3) 
 {
     int min = arg1;
-    if(arg2> min) min = arg2;
-    if(arg3> min) min = arg3;
+    if(arg2 > min) min = arg2;
+    if(arg3 > min) min = arg3;
     return min;
 }
-int avg = (a + b + c)/3;
 int min = Math.Min(Math.Min(a, b), c);
+int avg = (a + b + c)/3;
 avg = (avg)%10;
 min = (min)%10;
 
